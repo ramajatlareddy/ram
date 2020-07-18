@@ -1,0 +1,171 @@
+﻿<!Doctype html>
+<html>
+<head>
+<title>Rivera Registration</title>
+<style>
+.head{
+text-align:center;
+color:brown;
+
+}
+.div1{
+background-color:blue;
+width:100%;
+height:30px;
+}
+.spa1:hover {
+background-color:red;
+
+}
+a{
+text-decoration:none;
+color:white;
+margin-left:20px;
+font-size:20px;
+}
+.spa1{
+padding-top:5px;
+padding-bottom:6px;
+}
+.lk2{
+margin-left:40px;
+}
+.spa2{
+margin-left:750px;
+color:white;
+font-size:25px;
+}
+.pr12{
+font-size:15px;
+}
+.hl1{
+color:red;
+}
+table,th,td{
+border:1px solid red;
+}
+.hl2{
+color:red;
+}
+
+.t1{
+float:left;
+}
+.lk1{
+margin-left:43px;
+}
+.lk3{
+margin-left:45px;
+width:173px;
+}
+.lk4{
+margin-left:90px;
+width:178px;
+background-color:lightblue;
+color:black;
+}
+</style>
+</head>
+<script>
+function kaushal()
+{
+  var x= document.forms["kau"]["name"].value;
+  var y=document.forms["kau"]["reg"].value;
+  var pat=/[a-z|A-Z]{8,}/
+  if(!pat.exec(x))
+  {
+    alert("Name must contains atleast 8 Letter");
+	return(False);
+  }
+  var pat1=/[0-9]{2}[a-z]{3}[0-9]{4}/;
+  if(!pat1.exec(y))
+  {
+  alert("Enter correct registration number");
+  return(False);
+}
+}
+</script>
+</head>
+<body>
+<h1 class="head">Rivera Registration</h1>
+<div class="div1">
+<span class="spa1"><a href="www.sports.com">Sports</a></span>
+<span class="spa1"><a href="www.cultural.com">Cultural</a></span>
+<span class="spa1"><a href="www.tecg.com">Technical</a></span>
+<span class="spa1"><a href="www.nontech.com">Non-Technical</a></span>
+<span class="spa2">RIVERA</span>
+</div>
+<h3 class="hl1">Enclosures Required:</h3> 
+<pre class="pr12">
+   1. Names and details of the participants
+   2  Demand draft for Registration fees only in favor of ‘VIT UNIVERSITY’ payable at Vellore (Caution deposit   
+       should be paid in cash during check in)
+</pre>	
+<table style="width:50%;">
+  <tr>
+    <th>Serial.no</th>
+    <th>Event</th>
+    <th>Registration Fee</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Sports</td>
+    <td>500</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Cultural</td>
+    <td>500</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Technical</td>
+    <td>1000</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Non-Technical</td>
+    <td>1500</td>
+  </tr>
+</table>
+<br>
+<h3 class="hl1">Please Fill This form to register:</h3>
+<form onsubmit="return kaushal()" name="kau">
+Name:
+<input  type="text" name="name" class="lk1"><br><br>
+Regno:
+<input type="text" name="reg" class="lk2"><br><br>
+Event:
+<select name="Events" class="lk3">
+  <option value="Sports">Sports</option>
+  <option value="Cultural">Cultural</option>
+  <option value="Technical">Techhincal</option>
+  <option value="Non-Technical">Non-Technical</option><br>
+</select><br><br>
+<input type="submit" value="register" class="lk4">
+
+</form>
+<h3 class="hl2">Note:</h3>
+<ul>
+  <li>All registration will be confirmed after the receipt of the Demand Draft.</li>
+  <li>A return confirmation (fax/mail/post) will be sent which has to be produced at the time of registration.</li>
+  <li>Please provide us with valid contact numbers (preferably refer to a mobile number on which the person can be   
+     contacted during the fest also).</li>
+  <li>The last date for sports registrations is January 17th.</li>
+  <li>Photocopies of Participants Details Form can be used if needed. </li>
+ </ul>    
+ <p>The registration form should be faxed/mailed (between 1000hrs to 1700hrs) at the earliest.</p>Fax : +91 – 0416 – 2243092
+ <pre class="pr12">
+ <b>Postal Address:
+ Mr.M.kaushal,
+ RIVIERA ‘09VIT University,
+ Vellore – 632014Tamil Nadu, India.
+ +91 8794561230</b>
+ </pre>
+ <img class="t1" src="res.png" alt="rivera"><br>
+ <p>Come and enjoy rivera well</p>
+ <p>We will be honoured for conducting this rivera</p>
+ <p>There will be lot of events conducted here</p>
+ <p>Come here and show your talent</p>
+ </body>
+</html>
